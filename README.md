@@ -1,7 +1,10 @@
 
 # Ethereum_Truffle_Ether_Transfer_DAPP
 
-This box it our most bare official implementation with Webpack. Includes contracts, migrations, tests, user interface and webpack build pipeline.
+This is a TODO Coin Transfer DAPP ( Decentralized app), that would be a starter point to develop a DAPP with Smarter Contract and using web3.js to connect the web UI to the Blockchain. It helps to transfer the coin from the OWNER of the contract to any other account in the blockchain.
+
+![](https://github.com/panbhatt/EThereum_Truffle_Ether_Transfer_DAPP/blob/master/Capture.JPG)
+
 
 ## Installation
 
@@ -10,9 +13,9 @@ This box it our most bare official implementation with Webpack. Includes contrac
     npm install -g truffle
     ```
 
-2. Download the box. This also takes care of installing the necessary dependencies.
+2. Clone the Repo and execute.
     ```javascript
-    truffle unbox webpack
+    npm install
     ```
 
 3. Run the development console.
@@ -30,8 +33,9 @@ This box it our most bare official implementation with Webpack. Includes contrac
     ```javascript
     // Serves the front-end on http://localhost:8080
     npm run dev
-    ```
-
+	```    	
+   **Please note all the address being print on the screen. The first one is the owner through which the contract is being deployed.**  
+ 
 6. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
   ```javascript
   // If inside the development console.
@@ -41,23 +45,14 @@ This box it our most bare official implementation with Webpack. Includes contrac
   truffle test
   ```
 
-## FAQ
+## Components Used.
 
-* __How do I use this with Ganache?__
-
-    The config you need is already in place in `truffle.js`! Just run your `truffle` commands as usual, but add `--network ganache` to your options. [For more info, check out our documentation on adding network configurations](http://truffleframework.com/docs/advanced/configuration#networks). Depending on the port you're using and whether or not you're using MetaMask, you may also need to update lines 106 and 112 of `app/scripts/index.js`.
-
-* __I'm encountering this error: Error: Can't resolve '../build/contracts/MetaCoin.json'__
-
-  This means you haven't compiled or migrated your contracts yet. Run `truffle develop`, `compile` and `migrate` first.
-
-  Full error:
-
-  ```
-  ERROR in ./app/main.js
-  Module not found: Error: Can't resolve '../build/contracts/MetaCoin.json' in '/Users/tim/Documents/workspace/Consensys/test3/app'
-   @ ./app/main.js 11:16-59
-  ```
+* __Truffle__
+* __Solidity__
+* __Web3js__
+* __GANACHE__
+ 
+ 
 
 
 
