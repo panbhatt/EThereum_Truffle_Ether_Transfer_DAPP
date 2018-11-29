@@ -1,4 +1,5 @@
-# Webpack Truffle Box
+
+# Ethereum_Truffle_Ether_Transfer_DAPP
 
 This box it our most bare official implementation with Webpack. Includes contracts, migrations, tests, user interface and webpack build pipeline.
 
@@ -57,3 +58,6 @@ This box it our most bare official implementation with Webpack. Includes contrac
   Module not found: Error: Can't resolve '../build/contracts/MetaCoin.json' in '/Users/tim/Documents/workspace/Consensys/test3/app'
    @ ./app/main.js 11:16-59
   ```
+
+
+
